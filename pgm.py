@@ -18,7 +18,7 @@ ubuntu = "pkg install wget openssl-tool proot -y && hash -r && wget https://raw.
 rq = "./start-ubuntu.sh"
 apt = "apt-get update && apt-get upgrade"
 install = "apt install git -y && apt install python3-pip -y && apt install nano -y"
-clone = "git clone https://github.com/xtaodada/PagerMaid-Modify.git pagermaid && cp pgm.py pagermaid"
+clone = "git clone https://gitlab.com/Xtao-Labs/PagerMaid-modify.git pagermaid && cp pgm.py pagermaid"
 pic = "apt-get install imagemagick -y"
 sys = "apt-get install software-properties-common && add-apt-repository ppa:dawidd0811/neofetch && apt-get update && apt-get install neofetch"
 qr = "apt-get install libzbar-dev -y"
@@ -45,7 +45,7 @@ if t == "0":
     n()
     p("正在安装容器...")
     o(ubuntu)
-    enter = input("容器安装完成啦！是否直接进入\n[进入后请输入\napt update && apt upgrade\napt install python3 wget -y ]\n以及 wget https://raw.githubusercontent.com/wzk0/pgm-Termux/main/pgm.py \n(y/n):")
+    enter = input("容器安装完成啦！是否直接进入\n[进入后请输入\napt update && apt upgrade\napt install python3 wget -y ]\n以及 wget https://raw.githubusercontent.com/hxyhxy16/pgm-Termux/main/pgm.py \n(y/n):")
     if enter == "y":
       o(rq)
 
